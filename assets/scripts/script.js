@@ -93,5 +93,13 @@ displayDay();
 
 console.log($(".tasks"));  
 
+$(".save").on("click", function(event) {
+    var hourIndex = $(this).attr("data-index"); 
+    // console.log("Save clicked for hourIndex: " + hourIndex);  
+    tasksId = "#tasks" + hourIndex; 
+    var saveText = $(tasksId).val();
+    plannerData[hourIndex] = saveText; 
     
+    calendarDataAsString = JSON.stringify(plannerData); 
+    localStorage.setItem("calendarData", calendarDataAsString);    
 })
