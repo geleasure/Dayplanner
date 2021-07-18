@@ -4,6 +4,8 @@ This app uses jQuery and localStorage to keep track of tasks/meetings and the ho
 
 ![screen capture](./assets/images/DayPlanner.PNG)
 
+## Website
+https://geleasure.github.io/Dayplanner/
 
 ## Layout 
 
